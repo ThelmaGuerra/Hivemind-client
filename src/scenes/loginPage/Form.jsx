@@ -83,7 +83,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://hivemind-api-backend.onrender.com/auth/login" ||
+      process.env.SERVER_URL + "/auth/login" ||
         "http://localhost:3001/auth/login",
       {
         method: "POST",
