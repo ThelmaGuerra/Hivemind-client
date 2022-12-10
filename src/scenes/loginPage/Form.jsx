@@ -16,6 +16,9 @@ import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
 import { borderRadius } from "@mui/system";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -83,7 +86,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://hivemind-api-backend.onrender.com/auth/login" ||
+      process.env.SERVER_URL + "/auth/login" ||
         "http://localhost:3001/auth/login",
       {
         method: "POST",
