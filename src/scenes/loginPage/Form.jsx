@@ -83,7 +83,8 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      process.env.SERVER_URL + "/auth/login",
+      process.env.SERVER_URL + "/auth/login" ||
+        "http://localhost:3001/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
