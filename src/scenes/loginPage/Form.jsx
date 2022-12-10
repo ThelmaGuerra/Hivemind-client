@@ -67,7 +67,7 @@ const Form = () => {
 
     const savedUserResponse = await fetch(
       "http://localhost:3001/auth/register" ||
-        process.env.SERVER_URL + "/auth/register",
+        process.env.REACT_APP_SERVER_URL + "/auth/register",
       {
         method: "POST",
         body: formData,
