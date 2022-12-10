@@ -47,7 +47,8 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      "http://localhost:3001/posts" || process.env.SERVER_URL + "/posts",
+      process.env.REACT_APP_SERVER_URL + "/posts" ||
+        "http://localhost:3001/posts",
       {
         method: "POST",
         headers: {

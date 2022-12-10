@@ -21,8 +21,8 @@ const AdvertWidget = () => {
         height="auto"
         alt="advert"
         src={
-          "http://localhost:3001/assets/Honey&Hive.jpg" ||
-          process.env.SERVER_URL + "/assets/Honey&Hive.jpg"
+          process.env.REACT_APP_SERVER_URL + "/assets/Honey&Hive.jpg" ||
+          "http://localhost:3001/assets/Honey&Hive.jpg"
         }
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
