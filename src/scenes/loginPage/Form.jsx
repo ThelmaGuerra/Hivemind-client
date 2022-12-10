@@ -16,9 +16,6 @@ import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
 import { borderRadius } from "@mui/system";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
