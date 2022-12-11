@@ -9,6 +9,8 @@ import UserWidget from "scenes/widgets/UserWidget";
 import { setIsHomePage } from "state";
 
 const ProfilePage = () => {
+  const dispatch = useDispatch();
+
   const [user, setUser] = useState(null);
   const { userId } = useParams();
   const token = useSelector((state) => state.token);
@@ -25,6 +27,7 @@ const ProfilePage = () => {
     );
     const data = await response.json();
     setUser(data);
+    dispatch(setIsHomePage({ isHomePage: false }));
   };
 
   useEffect(() => {
