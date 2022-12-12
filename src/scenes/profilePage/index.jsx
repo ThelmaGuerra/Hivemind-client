@@ -18,7 +18,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      process.env.REACT_APP_SERVER_URL + `/users/${userId}` ||
+      `https://hivemind-api-backend.onrender.com/users/${userId}` ||
         `http://localhost:3001/users/${userId}`,
       {
         method: "GET",
