@@ -26,7 +26,6 @@ const ProfilePage = () => {
     );
     const data = await response.json();
     setUser(data);
-    dispatch(setIsHomePage({ isHomePage: false }));
   };
 
   useEffect(() => {
