@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Hivemind project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hivemind is a complete fullstack responsive social media app using the MERN stack.
 
-## Available Scripts
+You can sign in on the register page with complete validation, along with the functionality to upload a user image for your profile.
+You can create posts with images and you can also see, share and like other people's posts and add them as your friend.
 
-In the project directory, you can run:
+### Visit the website
 
-### `npm start`
+Because this website is deployed on render (free, for portfolios) the back-end experiences a "booting up" delay. So you will need to click login a couple of times so the back-end gets "started" and then it will run smoothly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To visit Hivemind, you can click here: https://hivemind.onrender.com/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Front-end
 
-### `npm test`
+For the front-end, the project uses React as the main framework, React Router for navigation through pages, Formik and yup for Forms and their validations, Redux toolkit with Persistent for state management and React Dropzone for image uploads.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Back-end
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the back-end, it uses Node.js as runtime serving, Express.js as the main framework, mongoose for managing the MongoDB, JWT for authentication and multer for uploading files.
