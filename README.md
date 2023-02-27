@@ -2,8 +2,8 @@
 
 Hivemind is a complete fullstack responsive social media app using the MERN stack.
 
-You can sign in on the register page with complete validation, along with the functionality to upload a user image for your profile.
-You can create posts with images and you can also see, share and like other people's posts and add them as your friend.
+The user can sign in on the register page with complete validation, along with the functionality to upload a user image for their profile.
+They can create posts with images and can also see, share and like other people's posts and add them as friends.
 
 ## Visit the website
 
